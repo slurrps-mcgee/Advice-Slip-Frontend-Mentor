@@ -1,0 +1,107 @@
+:root{
+    --color-dark-blue: #202733;
+    --color-dark-greyish-blue: #313A48;
+    --color-neon-green:#53FFAA;
+    --color-greyish-blue: #4F5D74;
+    --color-light-cyan: #CEE3E9;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body, html {
+    height: 100vh;
+  }
+
+body {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 800;
+    color: var(--color-light-cyan);
+    background-color: var(--color-dark-blue);
+}
+
+/*Card*/
+.card {
+    max-width: 500px;
+    background-color: var(--color-dark-greyish-blue);
+    border-radius: 10px;
+}
+
+.card-title {
+    color: var(--color-neon-green);
+    font-size: 11px;
+    text-transform: uppercase;
+}
+
+#text {
+    font-size: 24px;
+}
+
+/*Button*/
+  .btn-circle {
+    border: none;
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 50%;
+    position: absolute;
+  }
+
+  .btn-green {
+    background-color: hsl(150, 100%, 66%);
+  }
+
+  .btn-green:active {
+    border: none;
+  }
+
+  .btn-green:hover {
+    box-shadow: 0px 0px 40px 0px var(--color-neon-green);
+  }
+
+  .dice-icon{
+    background-image: url("images/icon-dice.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 24px;
+    width: 24px;
+}
+
+.desktopSep {
+    display: none;
+}
+
+  /*Media*/
+  @media only screen and (max-width: 360px){
+    .card{
+      width: 100%;
+    }
+
+    .mobileSep {
+        display: block;
+    }
+    .desktopSep {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 670px){
+    .card-title {
+        font-size: 13px;
+    }
+
+    #text {
+        font-size: 28px;
+    }
+
+    .btn-circle {
+    }
+
+    .mobileSep {
+        display: none;
+    }
+    .desktopSep {
+        display: block;
+    }
+}
